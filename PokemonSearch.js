@@ -15,7 +15,8 @@ const searchInput = document.getElementById("search-input");
 
 searchBtn.addEventListener("click", HandleSearch);
 
-async function HandleSearch() {
+async function HandleSearch(event) {
+	event.preventDefault();
     const inputValue = searchInput.value.toLowerCase();
 	console.log(inputValue);
     if (!inputValue) {
