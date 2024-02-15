@@ -11,7 +11,7 @@
   <body>
     <h1>Pokémon Search App</h1>
     <div id="display-card">
-      <form id="search-form">
+      <form id="search-form" onsubmit="HandleSearch(event)">
         <label id="search-prompt" for:"search-input">Search for Pokémon Name or ID:
 			<div id="input-block">
 				<input id="search-input">
